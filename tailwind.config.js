@@ -9,11 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'color-1': '#FFCDB2',
-        'color-2': '#FFB4A2',
-        'color-3': '#E5989B',
-        'color-4': '#B5838D',
-        'color-5': '#6D6875',
+        'color-1': '#133C55',
+        'color-2': '#386FA4',
+        'color-3': '#59A5D8',
+        'color-4': '#84D2F6',
+        'color-5': '#91E5F6',
+        'color-6': '#FF002B',
+
 
 
         backgroundImage: {

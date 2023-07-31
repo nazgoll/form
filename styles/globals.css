@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.shape{
+  /*clip-path: polygon(20px 0px, 400px 0px, 400px 20px, 400px 320px, 385px 340px, 362.5px 346.94px, 340px 340px, 165px 286px, 145px 286px, 66.32px 301.57px, 0px 326px, 0px 341px, 0px 0px);*/
+  /*background-color: #133c55*/
+  clip-path: polygon(10px 0px, 200px 0px, 200px 12.5px, 200px 200px, 200px 220.5px, 181.25px 216.84px, 170px 212.5px, 82.5px 178.75px, 72.5px 178.75px, 33.16px 188.48px, 0px 203.75px, 0px 213.13px, 0px 0px);
+  background-color: #133c55
+}
