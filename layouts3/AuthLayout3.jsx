@@ -1,4 +1,4 @@
-const AuthLayout2 = (props) => {
+const AuthLayout3 = (props) => {
     return(
         <div className={"w-screen h-screen items-center justify-center flex flex-col bg-color-1"}>
             <div  className={" p-16 pb-20 shadow-inner shadow-black bg-gradient-to-r from-blue-100 to-color-4" +
@@ -10,6 +10,7 @@ const AuthLayout2 = (props) => {
                 {props.children}
             </div>
         </div>
+
     )
 }
-export default AuthLayout2;
+export default AuthLayout3;

@@ -18,7 +18,7 @@ const LoginPage = () => {
                         User name
                     </label>
                     <input
-                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-yellow-400"}
+                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-color-5"}
                         type={"text"}
                         value={username}
                         onChange={handleUsernameChange}
@@ -30,7 +30,7 @@ const LoginPage = () => {
                         Password
                     </label>
                     <input
-                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-yellow-400"}
+                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-color-5"}
                         type={"password"}
                         value={password}
                         onChange={handlePassword}
@@ -40,13 +40,13 @@ const LoginPage = () => {
 
                 <div className={"flex flex-row items-center"}>
                     <a href={"/signup"}
-                       className={"py-3 px-7 ml-9 mr-3 w-2/6 mt-3 bg-yellow-400  rounded-xl text-2xl font-bold hover:bg-blue-100 text-black" +
+                       className={"py-3 px-7 ml-9 mr-3 w-2/6 mt-3 bg-color-6  rounded-xl text-2xl font-bold hover:bg-blue-100 text-black" +
                            ""}>
                         Login
                     </a>
                     <p className={"text-2xl ml-2 w-1/12 pr-2 text-white"}> / </p>
                     <a className={"border-r-amber-400 py-3 px-7 w-2/5 mt-3 mr-3 rounded-xl text-2xl font-bold text-white hover:text-blue-100"}
-                       href="/signup">
+                       href="">
                         Sign up
                     </a>
                 </div>

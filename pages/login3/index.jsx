@@ -1,4 +1,4 @@
-import AuthLayout2 from "@/layouts2/AuthLayout2";
+import AuthLayout3 from "@/layouts3/AuthLayout3";
 import {useState} from "react";
 const LoginPage = () => {
     const [username, setUsername] =
@@ -11,14 +11,14 @@ const LoginPage = () => {
         setPassword(event.target.value);
     }
     return(
-        <AuthLayout2 headerText={"Login"}>
+        <AuthLayout3 headerText={"Login"}>
             <div className={"flex flex-col gap-8"}>
                 <div>
                     <label className={"text-color-1 font-bold  w-full"}>
                         User name
                     </label>
                     <input
-                        className={"rounded-lg  mx-3 w-full p-2 bg-white shadow-md shadow-black hover:shadow-black hover:shadow-inner"}
+                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:shadow-black hover:shadow-inner"}
                         type={"text"}
                         value={username}
                         onChange={handleUsernameChange}
@@ -51,7 +51,7 @@ const LoginPage = () => {
                     </a>
                 </div>
             </div>
-        </AuthLayout2>
+        </AuthLayout3>
 
     )
 }
