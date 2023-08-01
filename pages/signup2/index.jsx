@@ -1,4 +1,4 @@
-import AuthLayout from "@/layouts/AuthLayout";
+import AuthLayout2 from "@/layouts2/AuthLayout2";
 import {useState} from "react";
 const Signup = () => {
     const [username, setUsername] =
@@ -13,15 +13,15 @@ const Signup = () => {
 
     return(
 
-        <AuthLayout headerText={"Sign up"}>
+        <AuthLayout2 headerText={"Sign up"}>
 
             <div className={"flex flex-col gap-8"}>
                 <div>
-                    <label className={"text-white font-bold  w-full"}>
+                    <label className={"text-color-1 font-bold  w-full"}>
                         User name
                     </label>
                     <input
-                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-color-5"}
+                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:shadow-black hover:shadow-inner"}
                         type={"text"}
                         value={username}
                         onChange={handleUsernameChange}
@@ -29,11 +29,11 @@ const Signup = () => {
                     />
                 </div>
                 <div>
-                    <label className={"text-white font-bold  w-full"}>
+                    <label className={"text-color-1 font-bold  w-full"}>
                         Email
                     </label>
                     <input
-                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-color-5 text-black"}
+                        className={"rounded-lg mx-3 w-full p-2 bg-white shadow-md shadow-black hover:shadow-black hover:shadow-inner text-black"}
                         type={"email"}
                         value={username}
                         onChange={handleUsernameChange}
@@ -41,11 +41,11 @@ const Signup = () => {
                     />
                 </div>
                 <div>
-                    <label className={"text-white font-bold  w-full"}>
+                    <label className={"text-color-1 font-bold  w-full"}>
                         Password
                     </label>
                     <input
-                        className={"rounded-lg  mx-3 w-full p-2 bg-white shadow-md shadow-black hover:bg-color-5"}
+                        className={"rounded-lg  mx-3 w-full p-2 bg-white shadow-md shadow-black hover:shadow-black hover:shadow-inner"}
                         type={"password"}
                         value={password}
                         onChange={handlePassword}
@@ -54,13 +54,13 @@ const Signup = () => {
                 </div>
 
                 <div className={"flex flex-row items-center"}>
-                    <a className={"py-3 px-7 w-2/5 mt-3 ml-5 mr-3 rounded-xl text-2xl bg-color-6  font-bold text-black hover:bg-blue-100"}
+                    <a className={"py-3 px-7 w-2/5 mt-3 ml-5 mr-3 rounded-xl text-2xl bg-color-6  font-bold hover:shadow-inner hover:shadow-black text-color-5"}
                        href="">
                         Sign up
                     </a>
                     <p className={"text-2xl ml-4 w-1/12 pr-2 text-white"}> / </p>
                     <a href={"/login"}
-                       className={"py-3 px-7 mr-3 w-2/6 mt-3  rounded-xl text-2xl font-bold hover:text-blue-100 text-white" +
+                       className={"py-3 px-7 mr-3 w-2/6 mt-3  rounded-xl text-2xl font-bold text-color-1 hover:text-color-6" +
                            ""}>
                         Login
                     </a>
@@ -68,7 +68,7 @@ const Signup = () => {
                 </div>
             </div>
 
-        </AuthLayout>
+        </AuthLayout2>
     )
 }
 export default Signup;
